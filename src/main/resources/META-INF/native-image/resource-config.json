@@ -1,43 +1,52 @@
 {
-  "resources": {
-    "includes": [
-      {
-        "pattern": ".*\\.json$"
-      },
-      {
-        "pattern": ".*\\.properties$"
-      },
-      {
-        "pattern": ".*\\.xml$"
-      },
-      {
-        "pattern": "models/.*"
-      },
-      {
-        "pattern": ".*\\.onnx$"
-      },
-      {
-        "pattern": ".*\\.txt$"
-      },
-      {
-        "pattern": ".*\\.dll$"
-      },
-      {
-        "pattern": ".*\\.so$"
-      },
-      {
-        "pattern": ".*\\.dylib$"
-      }
-    ]
-  },
-  "bundles": [
-    {
-      "name": "ocr",
-      "locales": [
-        "en",
-        "zh-CN",
-        "zh-TW"
-      ]
-    }
-  ]
+  "resources":{
+  "includes":[{
+    "pattern":"\\QMETA-INF/services/javax.imageio.spi.ImageInputStreamSpi\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.imageio.spi.ImageReaderSpi\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.imageio.spi.ImageWriterSpi\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.slf4j.spi.SLF4JServiceProvider\\E"
+  }, {
+    "pattern":"\\Qload/loaders.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Courier-Bold.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Courier-BoldOblique.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Courier-Oblique.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Courier.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Helvetica-Bold.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Helvetica-BoldOblique.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Helvetica-Oblique.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Helvetica.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Symbol.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Times-Bold.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Times-BoldItalic.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Times-Italic.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/Times-Roman.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/afm/ZapfDingbats.afm\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/glyphlist/glyphlist.txt\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/glyphlist/zapfdingbats.txt\\E"
+  }, {
+    "pattern":"\\Qorg/apache/pdfbox/resources/ttf/LiberationSans-Regular.ttf\\E"
+  }]},
+  "bundles":[{
+    "name":"sun.awt.resources.awt",
+    "classNames":["sun.awt.resources.awt"]
+  }]
 }

@@ -1,7 +1,9 @@
-com\ocr\nospring\TextService.class
 com\ocr\nospring\PdfService.class
-com\ocr\nospring\OfdService.class
-com\ocr\nospring\Main.class
+com\ocr\nospring\NativeImageMain.class
 com\ocr\nospring\Config.class
 com\ocr\nospring\OcrService.class
 com\ocr\nospring\OcrService$TextBlock.class
+com\ocr\nospring\TextService.class
+com\ocr\nospring\OfdService.class
+com\ocr\nospring\Main.class
+com\ocr\nospring\NativeCli.class

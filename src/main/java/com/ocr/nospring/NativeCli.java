@@ -11,14 +11,6 @@ import java.util.*;
  * 
  * 使用簡單的命令行參數（不使用 JSON）
  * 更容易編譯成 Native Image
- * 
- * 用法：
- *   jpeg2pdf-ofd-native.exe -i <input> -o <output> [options]
- * 
- * 示例：
- *   jpeg2pdf-ofd-native.exe -i image.jpg -o output/
- *   jpeg2pdf-ofd-native.exe -i images/ -o output/ -l chinese_cht -f pdf
- *   jpeg2pdf-ofd-native.exe -i *.jpg -o output/ -f all
  */
 public class NativeCli {
     
@@ -27,6 +19,11 @@ public class NativeCli {
     public static void main(String[] args) {
         try {
             System.setProperty("java.awt.headless", "true");
+            
+            if (args.length == 0) {
+                printUsage();
+                System.exit(0);
+            }
             
             // 解析參數
             String input = null;
